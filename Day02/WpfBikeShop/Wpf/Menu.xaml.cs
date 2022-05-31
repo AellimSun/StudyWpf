@@ -27,7 +27,9 @@ namespace Wpf
 
         private void btnProducts_Click(object sender, RoutedEventArgs e)
         {
-           
+            NavigationService.Navigate(
+                new Uri("/ProductManagement.xaml", UriKind.RelativeOrAbsolute)
+                );
         }
 
         private void btnLiveSupport_Click(object sender, RoutedEventArgs e)
