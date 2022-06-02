@@ -6,4 +6,5 @@
     - Naver OpenAPI
     - Youtube OpenAPI
     - Json datahandling
-   ![NaverMovieFinder](https://github.com/AellimSun/StudyWpf/blob/main/capture/interstellar.png)
+   
+![NaverMovieFinder](https://github.com/AellimSun/StudyWpf/blob/main/capture/interstellar.png)
