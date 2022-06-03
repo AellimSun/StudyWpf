@@ -1,5 +1,7 @@
-#WPF 포트폴리오
+# WPF 포트폴리오
+
 <br/>
+
 ## Naver 영화검색
   - WPF
     - MahApps.Metro Design
@@ -11,8 +13,6 @@
     - EntityFramework DB
 
 ![NaverMovieFinder](https://github.com/AellimSun/StudyWpf/blob/main/capture/interstellar.png)
-
-<br/>
 실행화면
 
 ![YoutubePlay](https://github.com/AellimSun/StudyWpf/blob/main/capture/youtubTrailer.JPG)
