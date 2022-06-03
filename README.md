@@ -14,3 +14,6 @@ C# Wpf Study record
 ##Day 4
  - Naver Movie App(continue)
  - Naver News Search App
+
+##Day 5
+ - MVVM Pattern
