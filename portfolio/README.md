@@ -25,4 +25,7 @@
 <br/>
 
 ## Naver News Search
- - WPF(.NET Framework Metro UI)
+  - WPF (.NET Framework 4.7.2 / C#)
+  - MahApps.Metro UI/Morden UI
+  - Newtonsoft.Json
+  - Naver OpenAPI
