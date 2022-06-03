@@ -1,5 +1,5 @@
 # StudyWpf
-Wpf 학습 저장소
+C# Wpf Study record
 
 ##Day 2
  - 레이아웃(패널, 그리드)
@@ -10,3 +10,7 @@ Wpf 학습 저장소
  - Design
  - Resource
  - Naver Movie App
+
+##Day 4
+ - Naver Movie App(continue)
+ - Naver News Search App
