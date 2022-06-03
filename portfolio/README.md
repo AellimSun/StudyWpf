@@ -12,8 +12,10 @@
     - CefSharp WebBrowser component
     - EntityFramework DB
 
+<br/>
+
 ![NaverMovieFinder](https://github.com/AellimSun/StudyWpf/blob/main/capture/interstellar.png)
-실행화면
+###### 실행화면
 
 ![YoutubePlay](https://github.com/AellimSun/StudyWpf/blob/main/capture/youtubTrailer.JPG)
-검색영화 예고편보기
+###### 검색영화 예고편보기
