@@ -9,7 +9,7 @@
         xmlns:local="clr-namespace:WpfNaverMovieFinder"
         mc:Ignorable="d"
         Title="Naver Moviefinder V2.0"
-        Height="650" Width="1024" ResizeMode="NoResize" ShowTitleBar="True">
+        Height="650" Width="1024" ResizeMode="NoResize" ShowTitleBar="True" Icon="resource/naver_Icon.png">
     <mah:MetroWindow.IconTemplate>
         <DataTemplate>
             <iconPacks:PackIconSimpleIcons Kind="Naver" Margin="7,7,0,0" Foreground="White"/>
@@ -71,7 +71,8 @@
         <!-- 버튼 영역 -->
         <StackPanel  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal">
             <Button x:Name="btnAddWatchlist" Content="즐겨찾기 추가" Margin="10"
-                    Width="150" FontSize ="12" Click="btnAddWatchlist_Click">
+                    Style="{StaticResource MahApps.Styles.Button.MetroSquare.Accent}"
+                    Width="150" Height="60" FontSize ="12" Click="btnAddWatchlist_Click">
                 <Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
