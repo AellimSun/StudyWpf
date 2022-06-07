@@ -33,4 +33,4 @@
 <br/>
 
 
-![NaverNewsSearch] (https://raw.githubusercontent.com/AellimSun/StudyWpf/main/capture/NaverNews.png)
+![NaverNewsSearch](https://raw.githubusercontent.com/AellimSun/StudyWpf/main/capture/NaverNews.png)
