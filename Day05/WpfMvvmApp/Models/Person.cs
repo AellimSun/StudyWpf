@@ -13,12 +13,12 @@ namespace WpfMvvmApp.Models
         public string LastName { get; set; }
 
         private string email;   //멤버변수
-        private string Email    //멤버속성
+        public string Email    //멤버속성
         { 
             get => email; // get{return email;}
             set
             {
-                if (Commons.IsValidEmail(email))
+                if (!Commons.IsValidEmail(value))
                 {
                     throw new Exception("Invalid Email");
                 }
@@ -44,9 +44,8 @@ namespace WpfMvvmApp.Models
         {
             get
             {
-                return DateTime.Now.Year == Date.Year &&
-                  DateTime.Now.Month == Date.Month &&
-                  DateTime.Now.Day == Date.Day;
+                return DateTime.Now.Month == Date.Month &&
+                       DateTime.Now.Day == Date.Day;
             }
         }
         public bool IsAdult
