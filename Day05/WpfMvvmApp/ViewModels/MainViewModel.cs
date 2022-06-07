@@ -26,7 +26,6 @@ namespace WpfMvvmApp.ViewModels
 
         private string outAdult;
         private string outBirthday;
-        private string outFullName;
        
         public string InFirstName
         {

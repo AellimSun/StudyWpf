@@ -78,7 +78,7 @@
             <Label Grid.Row="6" Grid.Column="0" Content="생일여부 : " VerticalAlignment="Center"
                    HorizontalAlignment="Right" FontSize="16"/>
 
-            <Label Grid.Row="1" Grid.Column="1" Content="{Binding OutFullName}" VerticalAlignment="Center" FontSize="16"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding OutLastName}" VerticalAlignment="Center" FontSize="16"/>
             <Label Grid.Row="2" Grid.Column="1" Content="{Binding OutFirstName}" VerticalAlignment="Center" FontSize="16"/>
             <Label Grid.Row="3" Grid.Column="1" Content="{Binding OutEmail}" VerticalAlignment="Center" FontSize="16"/>
             <Label Grid.Row="4" Grid.Column="1" Content="{Binding OutDate}" VerticalAlignment="Center" FontSize="16"/>
