@@ -20,5 +20,5 @@ C# Wpf Study record
 
 ##Day 6
  - Caliburn.Micro MVVM 학습
- - Bogus(FakeData, DummyData) 패키
+ - Bogus(FakeData, DummyData) 패키지
  - SmartHome 앱 
