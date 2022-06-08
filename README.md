@@ -17,3 +17,7 @@ C# Wpf Study record
 
 ##Day 5
  - MVVM Pattern
+
+##Day 6
+ - Caliburn.Micro MVVM 학습
+ - SmartHome 앱 
