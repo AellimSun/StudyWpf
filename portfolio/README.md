@@ -20,10 +20,6 @@
 ![YoutubePlay](https://github.com/AellimSun/StudyWpf/blob/main/capture/youtubTrailer.JPG)
 ###### 검색영화 예고편보기
 
-
-
-
-
 <br/>
 
 ## Naver News Search
@@ -40,7 +36,6 @@
 
 <br/>
 
-
 ## SmartHomeMornitoring App
  - WPF (.NET Framework 4.7.2 / C#)
   - MahApps.Metro
@@ -51,7 +46,6 @@
   - SQLServer DB
 
 <br/>
-
 
 ![SmartHomeMornitoring](https://github.com/AellimSun/StudyWpf/blob/main/capture/SmartHomeMonitoring.JPG)
 ###### 실행화면
