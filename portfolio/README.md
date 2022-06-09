@@ -11,9 +11,7 @@
     - Google.Apis.Youtube.v3
     - CefSharp WebBrowser component
     - EntityFramework DB
-
-<br/>
-
+    
 ![NaverMovieFinder](https://github.com/AellimSun/StudyWpf/blob/main/capture/interstellar.png)
 ###### 실행화면
 
@@ -31,15 +29,10 @@
   - Newtonsoft.Json
   - Naver OpenAPI
 
-<br/>
-
-
 ![NaverNewsSearch](https://raw.githubusercontent.com/AellimSun/StudyWpf/main/capture/NaverNews.png)
 ###### 실행화면
 
 <br/>
-
-
 
 
 ## SmartHomeMornitoring App
