@@ -37,3 +37,20 @@
 
 ![NaverNewsSearch](https://raw.githubusercontent.com/AellimSun/StudyWpf/main/capture/NaverNews.png)
 ###### 실행화면
+
+<br/>
+
+
+##SmartHomeMornitoring App
+ - WPF (.NET Framework 4.7.2 / C#)
+  - MahApps.Metro
+  - Caliburn.Micro
+  - LiveCharts
+  - M2Mqtt
+  - Newtonsoft.Json
+  - SQLServer DB
+
+<br/>
+
+![SmartHomeMornitoring] (https://github.com/AellimSun/StudyWpf/blob/main/capture/SmartHomeMonitoring.JPG)
+###### 실행화면
