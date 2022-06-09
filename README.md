@@ -2,9 +2,9 @@
 C# Wpf Study
 
 ## Day 2
- - 레이아웃(패널, 그리드)
- - 페이지 네비게이션
- - 데이터 바인딩
+ - Layout(Panel, Grid)
+ - Page Navigation
+ - Data Binding
 
 ## Day 3
  - Design
@@ -19,8 +19,8 @@ C# Wpf Study
  - MVVM Pattern
 
 ## Day 6
- - Caliburn.Micro MVVM 학습
- - Bogus(FakeData, DummyData) 패키지
+ - Caliburn.Micro MVVM
+ - Bogus(FakeData, DummyData) Pakage
  - SmartHome system building 
 
 ## Day 7
