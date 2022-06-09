@@ -1,5 +1,5 @@
 # StudyWpf
-C# Wpf Study record
+C# Wpf Study
 
 ## Day 2
  - 레이아웃(패널, 그리드)
