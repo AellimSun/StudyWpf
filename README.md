@@ -9,11 +9,11 @@ C# Wpf Study
 ## Day 3
  - Design
  - Resource
- - Naver Movie App
+ - Naver Movie App ([클릭](https://github.com/AellimSun/StudyWpf/blob/main/portfolio/README.md#naver-%EC%98%81%ED%99%94%EA%B2%80%EC%83%89))
 
 ## Day 4
- - Naver Movie App(continue)
- - Naver News Search App
+ - Naver Movie App(continue) 
+ - Naver News Search App ([클릭](https://github.com/AellimSun/StudyWpf/blob/main/portfolio/README.md#naver-news-search))
 
 ## Day 5
  - MVVM Pattern
@@ -24,7 +24,7 @@ C# Wpf Study
  - SmartHome system building 
 
 ## Day 7
- - SmartHone system building
+ - SmartHome system building ([클릭](https://github.com/AellimSun/StudyWpf/blob/main/portfolio/README.md#smarthomemornitoring-app))
  - MQTT Publish program
  - MQTT Broker program(Broker, DB)
  - MQTT Monitoring program
