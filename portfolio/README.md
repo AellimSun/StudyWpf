@@ -52,5 +52,6 @@
 
 <br/>
 
-![SmartHomeMornitoring] (https://github.com/AellimSun/StudyWpf/blob/main/capture/SmartHomeMonitoring.JPG)
+
+![SmartHomeMornitoring](https://github.com/AellimSun/StudyWpf/blob/main/capture/SmartHomeMonitoring.JPG)
 ###### 실행화면
