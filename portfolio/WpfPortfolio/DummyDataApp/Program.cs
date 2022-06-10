@@ -49,7 +49,7 @@ namespace DummyDataApp
         {
             MqttBrokerUrl = "localhost"; // "210.119.12.76" / "127.0.0.1"
 
-            var Rooms = new[] { "DINNING", "LIVING", "BATH", "BED" }; //부엌, 거실, 욕실, 침실
+            var Rooms = new[] { "DINING", "LIVING", "BATH", "BED" }; //부엌, 거실, 욕실, 침실
             SensorData = new Faker<SensorInfo>()
                     .RuleFor(r => r.DevId, f => f.PickRandom(Rooms))
                     .RuleFor(r => r.CurrTime, f => f.Date.Past(0))
@@ -75,6 +75,9 @@ namespace DummyDataApp
         {
             MqttThread = new Thread(() => LoopPublish());
             MqttThread.Start();
+
+            //Thread thread = new Thread(() => LoopPublish2());
+            //thread.Start();
         }
 
         private static void LoopPublish()
@@ -84,8 +87,22 @@ namespace DummyDataApp
                 SensorInfo tempValue = SensorData.Generate();
                 CurrValue = JsonConvert.SerializeObject(tempValue, Formatting.Indented);
                 Client.Publish("home/device/fakedata", Encoding.Default.GetBytes(CurrValue));
-                Console.WriteLine($"Published : {CurrValue}");
-                Thread.Sleep(1000);
+                Console.WriteLine($"Published newdata: {CurrValue}");
+                Thread.Sleep(1500);
+            }
+        }
+
+        //Main 메서드 실행되는 부분
+        private static void LoopPublish2()
+        {
+            while (true)
+            {
+                SensorInfo tempValue = SensorData.Generate();
+                tempValue.DevId = Guid.NewGuid().ToString();    // newdata topic DEVID 변경
+                CurrValue = JsonConvert.SerializeObject(tempValue, Formatting.Indented);
+                Client.Publish("home/device/fakedata", Encoding.Default.GetBytes(CurrValue));
+                Console.WriteLine($"Published fakedata: {CurrValue}");
+                Thread.Sleep(3000);
             }
         }
     }
