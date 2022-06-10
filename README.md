@@ -23,7 +23,7 @@ C# Wpf Study
  - Bogus(FakeData, DummyData) Pakage
  - SmartHome system building 
 
-## Day 7
+## Day 7 ~ 8
  - SmartHome system building ([Click](https://github.com/AellimSun/StudyWpf/blob/main/portfolio/README.md#smarthomemornitoring-app))
  - MQTT Publish program
  - MQTT Broker program(Broker, DB)
