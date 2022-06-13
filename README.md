@@ -28,3 +28,6 @@ C# Wpf Study
  - MQTT Publish program
  - MQTT Broker program(Broker, DB)
  - MQTT Monitoring program
+
+##Day 9
+ - SmartHomeSystem complete
