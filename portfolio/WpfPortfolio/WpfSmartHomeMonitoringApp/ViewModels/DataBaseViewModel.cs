@@ -8,6 +8,7 @@ using System.Text;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 using WpfSmartHomeMonitoringApp.Helpers;
+using WpfSmartHomeMonitoringApp.Models;
 
 namespace WpfSmartHomeMonitoringApp.ViewModels
 {
@@ -71,7 +72,11 @@ namespace WpfSmartHomeMonitoringApp.ViewModels
             BrokeUrl = Commons.BROKERHOST = "localhost";
             Topic = Commons.PUB_TOPIC = "home/device/#"; // multipleTopic
             ConnString = Commons.CONNSTRING = "Data Source=PC01;Initial Catalog=OpenApiLab;Integrated Security=True";
-            
+
+            //Topic = Commons.PUB_TOPIC = "home/+/#"; :
+            //Single Level wildcard : +
+            //Multi Level WildCard : #
+
             if (Commons.IS_CONNECT)
             {
                 IsConnected = true;
@@ -115,10 +120,10 @@ namespace WpfSmartHomeMonitoringApp.ViewModels
                         IsConnected = Commons.IS_CONNECT = false;
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
 
-                    throw;
+                    //throw;
                 }
             }
         }
@@ -127,7 +132,11 @@ namespace WpfSmartHomeMonitoringApp.ViewModels
         {
             DbLog += $"{msg}\n";
         }
-
+        /// <summary>
+        /// Subscribe한 메세지 처리 이벤트 핸들러
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MQTT_CLIENT_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
         {
             var message = Encoding.UTF8.GetString(e.Message);
@@ -137,10 +146,17 @@ namespace WpfSmartHomeMonitoringApp.ViewModels
 
         private void SetDataBase(string message)
         {
-            var currData = JsonConvert.DeserializeObject<Dictionary<string,string>>(message);
+            var currDatas = JsonConvert.DeserializeObject<Dictionary<string,string>>(message);
             //
-            Debug.WriteLine(currData);
+            //
 
+            var smartHomeModel = new SmartHomeModel();
+            smartHomeModel.DevId = currDatas["DevId"];
+            smartHomeModel.CurrTime = DateTime.Parse(currDatas["CurrTime"]);
+            smartHomeModel.Temp = double.Parse(currDatas["Temp"]);
+            smartHomeModel.Humid = double.Parse(currDatas["Humid"]);
+
+            Debug.WriteLine(currDatas);
             using (SqlConnection conn = new SqlConnection(ConnString))
             {
                 conn.Open();
@@ -159,13 +175,13 @@ namespace WpfSmartHomeMonitoringApp.ViewModels
                 try
                 {
                     SqlCommand cmd = new SqlCommand(strInQ, conn);
-                    SqlParameter parmDevId = new SqlParameter("@DevId", currData["DevId"]);
+                    SqlParameter parmDevId = new SqlParameter("@DevId", currDatas["DevId"]);
                     cmd.Parameters.Add(parmDevId);
-                    SqlParameter parmCurrTime = new SqlParameter("@CurrTime", DateTime.Parse(currData["CurrTime"]));
+                    SqlParameter parmCurrTime = new SqlParameter("@CurrTime", DateTime.Parse(currDatas["CurrTime"]));
                     cmd.Parameters.Add(parmCurrTime);
-                    SqlParameter parmTemp = new SqlParameter("@Temp", currData["Temp"]);
+                    SqlParameter parmTemp = new SqlParameter("@Temp", currDatas["Temp"]);
                     cmd.Parameters.Add(parmTemp);
-                    SqlParameter parmHumid = new SqlParameter("@Humid", currData["Humid"]);
+                    SqlParameter parmHumid = new SqlParameter("@Humid", currDatas["Humid"]);
                     cmd.Parameters.Add(parmHumid);
 
                     if (cmd.ExecuteNonQuery() == 1)

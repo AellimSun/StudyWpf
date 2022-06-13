@@ -21,7 +21,7 @@
                         <MenuItem.Icon>
                             <iconPacks:MaterialDesign Kind="AttachFile"/>
                         </MenuItem.Icon>
-                        <MenuItem Header="Start">
+                        <MenuItem x:Name="PopInfoDialog" Header="Start">
                             <MenuItem.Icon>
                                 <iconPacks:MaterialDesign Kind="PlayCircleFilled"/>
                             </MenuItem.Icon>
@@ -65,7 +65,7 @@
                         <MenuItem.Icon>
                             <iconPacks:MaterialDesign Kind="Help"/>
                         </MenuItem.Icon>
-                        <MenuItem Header="About">
+                        <MenuItem x:Name="PopInfoView" Header="About">
                             <MenuItem.Icon>
                                 <iconPacks:MaterialDesign Kind="Info"/>
                             </MenuItem.Icon>
@@ -75,14 +75,14 @@
 
                 <ToolBarTray>
                     <ToolBar Style="{StaticResource MahApps.Styles.ToolBar}">
-                        <Button ToolTip="Start MQQT Subsciber">
+                        <Button x:Name="StartSubscribe" ToolTip="Start MQQT Subsciber">
                             <iconPacks:MaterialDesign Kind="PlayCircleFilled"/>
                         </Button>
                         <Button ToolTip="Stop MQQT Subsciber">
                             <iconPacks:MaterialDesign Kind="PauseCircleFilled"/>
                         </Button>
                         <Separator/>
-                        <Button ToolTip="Exit">
+                        <Button x:Name="ExitToolBar" ToolTip="Exit">
                             <iconPacks:MaterialDesign Kind="ExitToApp"/>
                         </Button>
                     </ToolBar>
