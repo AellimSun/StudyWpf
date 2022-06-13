@@ -24,7 +24,7 @@ C# Wpf Study
  - SmartHome system building 
 
 ## Day 7 ~ 8
- - SmartHome system building   [Click](https://github.com/AellimSun/StudyWpf/blob/main/portfolio/README.md#smarthomemornitoring-app)
+ - SmartHome system building   [[Click](https://github.com/AellimSun/StudyWpf/blob/main/portfolio/README.md#smarthomemornitoring-app)]
  - MQTT Publish program
  - MQTT Broker program(Broker, DB)
  - MQTT Monitoring program
