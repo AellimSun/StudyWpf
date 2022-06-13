@@ -43,4 +43,10 @@
   - SQLServer DB
 
 ![SmartHomeMornitoring](https://github.com/AellimSun/StudyWpf/blob/main/capture/SmartHomeMonitoring.JPG)
-###### 실행화면
+###### DB monitoring View
+
+![RealTimeView](https://github.com/AellimSun/StudyWpf/blob/main/capture/SmartHomeMonitoring_RealTime.png)
+###### RealTime View
+
+![HistoryView](https://github.com/AellimSun/StudyWpf/blob/main/capture/SmartHomeMonitoring_History.png)
+###### History View
