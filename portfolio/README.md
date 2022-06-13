@@ -34,7 +34,7 @@
 <br/>
 
 ## SmartHomeMornitoring App
-[이전]https://github.com/AellimSun/StudyWpf
+[이전](https://github.com/AellimSun/StudyWpf)
  - WPF (.NET Framework 4.7.2 / C#)
   - MahApps.Metro
   - Caliburn.Micro
